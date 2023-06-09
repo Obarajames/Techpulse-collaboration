@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechPulse</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/deb49aa60e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--start of navigation-->
+    <nav>
+
+        <div class="nav-left">
+        <i class="fa fa-wave-square"></i>
+        <h1>TechPulse</h1>
+        </div>
+
+        <div class="nav-center">
+            <input type="text" placeholder="Search">
+            <i class="fa fa-search"></i>
+        </div>
+
+        <div class="nav-right">
+          <img src="images/profile.png" class="user-pic" id="user-pic" onclick="display()">
+<!--dropdown menu start-->
+          <div class="sub-menu-wrap " id="sub-menu">
+            <div class="sub-menu">
+
+                <div class="user-info">
+                    <img src="images/profile.png" alt="">
+                    <h3>James Omwoyo</h3>
+                </div>
+                
+                <hr>
+
+               <div class="sub-menu-link">
+                <a href="#">
+                    <img src="images/profile.png" alt="">
+                    <p>Edit Profile</p>
+                    <span>></span>
+                </a>
+            </div>
+
+            <div class="sub-menu-link">
+                <a href="#">
+                    <img src="images/setting.png" alt="">
+                    <p>Settings</p>
+                    <span>></span>
+                </a>
+            </div>
+
+            <div class="sub-menu-link">
+                <a href="#">
+                    <img src="images/help.png" alt="">
+                    <p>Help</p>
+                    <span>></span>
+                </a>
+            </div>    
+
+            <div class="sub-menu-link">    
+                <a href="#">
+                    <img src="images/logout.png" alt="">
+                    <p>Log out</p>
+                    <span>></span>
+                </a>
+            </div>
+          </div>
+       </div>
+       <!--end of dropdown menu-->
+
+    </nav>
+    <!--end of the navigation bar-->
+
+
+    <div class="container">
+        <!--left bar-->
+        <div class="left-bar">
+            <ul>
+                <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-bell"></i> Notifications</a></li>
+                <li><a href="#"><i class="fas fa-user-group"></i> Followers</a></li>
+                <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+                <li><a href="#"><i class="fas fa-moon" onclick="darkMode()"></i> Dark Mode</a></li>
+            </ul>
+
+            <div class="social-icons">
+                <a href="#" class="icon-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="icon-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="icon-link"><i class="fab fa-twitch"></i></a>
+                <a href="#" class="icon-link"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="icon-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="icon-link"><i class="fab fa-telegram"></i></a>
+            </div>
+
+            <div class="left-login">
+                <h4>Join our amaizing community</h4>
+                <a href="login.html"><button>Log in</button></a>
+                <a href="signup.html"><button>Sign Up</button></a>
+            </div>
+        </div>
+        <!--center-->
+        <div class="center-bar">
+
+            <div class="center-toplinks">
+                <a href="">News</a>
+                <a href="#">Latest</a>
+                <a href="#">Popular</a>
+            </div>
+<!--post box-->
+            <div class="post-box">
+                <img src="images/biden.jpg" alt="" srcset="" width="100%" height="300px">
+          <p>Source: Engadget - By: Andrew Tarantola - on: 2023-05-23T19:06:36Z</p>
+          <h3>White House reveals its next steps towards 'responsible' AI development</h3>
+          <p class="paragraph">The White House has made responsible AI development a focus of this administration in recent months, releasing a Blueprint AI Bill of Rights, developing a risk management framework, committing $140 million to found seven new National Academies dedicated to AI…</p>
+
+          <div class="reaction">
+            <button class="btn" id="green"><i class="fa fa-thumbs-up fa-lg" aria-hidden="true" onclick="like()"></i></button>
+            <button class="btn" id="red"><i class="fa fa-thumbs-down fa-lg" aria-hidden="true"></i></button>
+          </div>
+            </div>
+
+            <div class="post-box">
+                <img src="images/imgone.jpeg" alt="" srcset="" width="100%" height="300px">
+          <p>Source:BBC News - By: Lilian  - on: 2023-06-07</p>
+          <h3>Russian hackers were behind the "sophisticated cyber-attack" which knocked out council services, it has been confirmed.</h3>
+          <p class="paragraph">Gloucester City Council has now concluded its investigation into the attack which saw their IT systems compromised in 2021.It caused damage to the council's network and online services, with a number of systems taken offline.</p>
+
+          <div class="reaction">
+            <i class="fa fa-heart"> 120</i>
+            <i class="fa fa-comment"> 120</i>
+            <i class="fa fa-save"> 120</i>
+            <i class="fa fa-share"></i>
+          </div>
+            </div>
+
+            <div class="post-box">
+                <img src="images/imgtwo.jpeg" alt="" srcset="" width="100%" height="300px">
+          <p>Source:BBC News - By: George  - on: 2023-06-07</p>
+          <h3>Twitch has apologised, after a backlash over new advertising rules.</h3>
+          <p class="paragraph">The Amazon-owned livestreaming service had said it would restrict the size and type of ads used by streamers who create content on Twitch.This would have substantially reduced the ways in which streamers generate income on the platform.Twitch has now said it will rewrite the new policy, after several prominent creators threatened to boycott the platform - and some moved elsewhere.</p>
+
+          <div class="reaction">
+            <i class="fa fa-heart"> 120</i>
+            <i class="fa fa-comment"> 120</i>
+            <i class="fa fa-save"> 120</i>
+            <i class="fa fa-share"></i>
+          </div>
+            </div>
+
+            <div class="post-box">
+                <img src="images/img3.jpeg" alt="" srcset="" width="100%" height="300px">
+          <p>Source:BBC News - By: James  - on: 2023-06-07</p>
+          <h3>ByteDance accused of helping China spy on Hong Kong activists.</h3>
+          <p class="paragraph">Users who uploaded "protest-related content" were also identified and monitored, former ByteDance executive Yintao Yu alleges in a US court filing.The CCP members were also able to access US TikTok user data, Mr Yu says.
+          </p>
+
+          <div class="reaction">
+            <i class="fa fa-heart"> 120</i>
+            <i class="fa fa-comment"> 120</i>
+            <i class="fa fa-save"> 120</i>
+            <i class="fa fa-share"></i>
+          </div>
+            </div>
+
+            <div class="post-box">
+                <img src="images/mozilla.jpg" alt="" srcset="" width="100%" height="300px">
+          <p>Source:BBC News - By: John  - on: 2023-06-07</p>
+          <h3>Mozilla Africa Mradi Innovation Week</h3>
+          <p class="paragraph">Mozilla, in partnership with the Nairobi City County Government, is convening African entrepreneurs, developers, international and multilateral organizations, civil society, governments, policymakers, and regulators, among others, to explore solutions that best address challenges and promote a healthy internet for all. We believe that innovation will create solutions to the unique challenges faced.
+          </p>
+
+          <div class="reaction">
+            <i class="fa fa-heart"> 120</i>
+            <i class="fa fa-comment"> 120</i>
+            <i class="fa fa-save"> 120</i>
+            <i class="fa fa-share"></i>
+          </div>
+            </div>
+            <div class="post-box">
+                <img src="images/img4.jpeg" alt="" srcset="" width="100%" height="300px">
+          <p>Source:BBC News - By: John  - on: 2023-06-07</p>
+          <h3>Technology minister urges caution on AI 'Terminator' warnings</h3>
+          <p class="paragraph">"If you're only talking about the end of humanity because of some, rogue, Terminator-style scenario, you're going to miss out on all of the good that AI is already functioning - how it's mapping proteins to help us with medical research, how it's helping us with climate change.
+          </p>
+
+          <div class="reaction">
+            <i class="fa fa-heart"> 120</i>
+            <i class="fa fa-comment"> 120</i>
+            <i class="fa fa-save"> 120</i>
+            <i class="fa fa-share"></i>
+          </div>
+            </div>
+            <div class="post-box">
+                <img src="images/img5.jpeg" alt="" srcset="" width="100%" height="300px">
+          <p>Source:BBC News - By: John  - on: 2023-06-07</p>
+          <h3>Microsoft will pay $20m (£16m) to US federal regulators after it was found to have illegally collected data on children who had started Xbox accounts.</h3>
+          <p class="paragraph">The Federal Trade Commission (FTC) reached a settlement with the company on Monday, which also includes increased protections for child gamers.The FTC said Microsoft violated the Children's Online Privacy Protection Act by not properly getting parental consent and by retaining personal data on children under 13 for longer than necessary for accounts created before 2021.
+          </p>
+
+          <div class="reaction">
+            <i class="fa fa-heart"> 120</i>
+            <i class="fa fa-comment"> 120</i>
+            <i class="fa fa-save"> 120</i>
+            <i class="fa fa-share"></i>
+          </div>
+            </div>
+
+        </div>
+    </div>
+   <script src="script.js"></script> 
+</body>
+</html>
