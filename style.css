@@ -250,8 +250,8 @@ nav{
 }
 .reaction i{
     font-weight: 600;
-    color:;
-    border: 2px solid #ccc;
+    color:black;
+    
 }
 .reaction button{
     cursor: pointer;
