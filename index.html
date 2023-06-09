@@ -7,6 +7,7 @@
     <title>TechPulse</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/deb49aa60e.js" crossorigin="anonymous"></script>
+    <script src="/search.js"></script>
 </head>
 <body>
     <!--start of navigation-->
@@ -17,11 +18,32 @@
         <h1>TechPulse</h1>
         </div>
 
-        <div class="nav-center">
-            <input type="text" placeholder="Search">
-            <i class="fa fa-search"></i>
-        </div>
+      <!--   <div class="nav-center">
+          <div></div>
+          <input type="search" id="search" onchange="openPage()" placeholder="Search">
 
+            <i class="fa fa-search">Search</i>
+        </div> 
+        <div class="nav-center">
+          <div id="search">
+            <input type="text" onchange="openPage()" placeholder="search">
+            <label for="searchInput"><i class="fa fa-search"></i></label>
+          </div>
+        -->
+        <div class="nav-center">
+        <form action="" method="" class="col-12" id="search-form">
+          <div class="form-row">
+            <div class="col-12 mt-4 col-sm-6 col-lg-4">
+              <label for="search-id" class="sr-only">Search:</label>
+              <input type="text" name="" class="form-control" id="search-id" placeholder="Search...">
+            </div>
+            <div class="col-12 mt-4 col-sm-auto">
+              <button type="submit" class="btn btn-primary btn-block">Search</button>
+            </div>
+          </div>
+          <!-- .form-row -->
+        </form>
+      </div>
         <div class="nav-right">
           <img src="images/profile.png" class="user-pic" id="user-pic" onclick="display()">
 <!--dropdown menu start-->

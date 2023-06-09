@@ -213,7 +213,7 @@ nav{
 /*center*/
 .center-bar {
     flex: 1;
-    background-color:;
+    background-color:transparent;
     padding: 20px;
     box-sizing: border-box;
     width: 20%;
@@ -250,7 +250,7 @@ nav{
 }
 .reaction i{
     font-weight: 600;
-    color:;
+    color:firebrick;
     border: 2px solid #ccc;
 }
 .reaction button{
