@@ -10,53 +10,32 @@
     <script src="/search.js"></script>
 </head>
 <body>
-    <!--start of navigation-->
+<!--start of navigation-->
     <nav>
-
+      <!---top left header-->
         <div class="nav-left">
         <i class="fa fa-wave-square"></i>
         <h1>TechPulse</h1>
         </div>
 
-      <!--   <div class="nav-center">
-          <div></div>
-          <input type="search" id="search" onchange="openPage()" placeholder="Search">
+        <div class="nav-center">
+            <input type="text" placeholder="Search">
+            <i class="fa fa-search"></i>
+        </div>
 
-            <i class="fa fa-search">Search</i>
-        </div> 
-        <div class="nav-center">
-          <div id="search">
-            <input type="text" onchange="openPage()" placeholder="search">
-            <label for="searchInput"><i class="fa fa-search"></i></label>
-          </div>
-        -->
-        <div class="nav-center">
-        <form action="" method="" class="col-12" id="search-form">
-          <div class="form-row">
-            <div class="col-12 mt-4 col-sm-6 col-lg-4">
-              <label for="search-id" class="sr-only">Search:</label>
-              <input type="text" name="" class="form-control" id="search-id" placeholder="Search...">
-            </div>
-            <div class="col-12 mt-4 col-sm-auto">
-              <button type="submit" class="btn btn-primary btn-block">Search</button>
-            </div>
-          </div>
-          <!-- .form-row -->
-        </form>
-      </div>
         <div class="nav-right">
           <img src="images/profile.png" class="user-pic" id="user-pic" onclick="display()">
 <!--dropdown menu start-->
           <div class="sub-menu-wrap " id="sub-menu">
             <div class="sub-menu">
-
+              <!--user image with username-->
                 <div class="user-info">
                     <img src="images/profile.png" alt="">
                     <h3>James Omwoyo</h3>
                 </div>
                 
                 <hr>
-
+              <!--user image with edit profile link-->
                <div class="sub-menu-link">
                 <a href="#">
                     <img src="images/profile.png" alt="">
@@ -64,7 +43,7 @@
                     <span>></span>
                 </a>
             </div>
-
+            <!--settings image with settings link-->
             <div class="sub-menu-link">
                 <a href="#">
                     <img src="images/setting.png" alt="">
@@ -72,7 +51,7 @@
                     <span>></span>
                 </a>
             </div>
-
+            <!--help image with help link-->
             <div class="sub-menu-link">
                 <a href="#">
                     <img src="images/help.png" alt="">
@@ -80,7 +59,7 @@
                     <span>></span>
                 </a>
             </div>    
-
+            <!--logout image with logout link-->
             <div class="sub-menu-link">    
                 <a href="#">
                     <img src="images/logout.png" alt="">
@@ -106,7 +85,7 @@
                 <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
                 <li><a href="#"><i class="fas fa-moon" onclick="darkMode()"></i> Dark Mode</a></li>
             </ul>
-
+            <!--left bar social icons-->
             <div class="social-icons">
                 <a href="#" class="icon-link"><i class="fab fa-twitter"></i></a>
                 <a href="#" class="icon-link"><i class="fab fa-github"></i></a>
@@ -115,7 +94,7 @@
                 <a href="#" class="icon-link"><i class="fab fa-instagram"></i></a>
                 <a href="#" class="icon-link"><i class="fab fa-telegram"></i></a>
             </div>
-
+            <!--login and signup buttons-->
             <div class="left-login">
                 <h4>Join our amaizing community</h4>
                 <a href="login.html"><button>Log in</button></a>
@@ -150,10 +129,12 @@
           <p class="paragraph">Gloucester City Council has now concluded its investigation into the attack which saw their IT systems compromised in 2021.It caused damage to the council's network and online services, with a number of systems taken offline.</p>
 
           <div class="reaction">
-            <i class="fa fa-heart"> 120</i>
-            <i class="fa fa-comment"> 120</i>
-            <i class="fa fa-save"> 120</i>
-            <i class="fa fa-share"></i>
+            <button id= "like-el"onclick= "like()"class = reaction button><i class="fa fa-heart"> </i></button>
+            <span id ="likeCount">likecount++</span>
+            <button class = reaction button><i class="fa fa-comment"> </i></button>
+            <button class = reaction button><i class="fa fa-save"></i></button>
+            <button class = reaction button><i class="fa fa-share"></i></button>
+            
           </div>
             </div>
 
@@ -164,10 +145,11 @@
           <p class="paragraph">The Amazon-owned livestreaming service had said it would restrict the size and type of ads used by streamers who create content on Twitch.This would have substantially reduced the ways in which streamers generate income on the platform.Twitch has now said it will rewrite the new policy, after several prominent creators threatened to boycott the platform - and some moved elsewhere.</p>
 
           <div class="reaction">
-            <i class="fa fa-heart"> 120</i>
-            <i class="fa fa-comment"> 120</i>
-            <i class="fa fa-save"> 120</i>
-            <i class="fa fa-share"></i>
+            <button class = reaction button><i class="fa fa-heart"> </i></button>
+            <button class = reaction button><i class="fa fa-comment"> </i></button>
+            <button class = reaction button><i class="fa fa-save"></i></button>
+            <button class = reaction button><i class="fa fa-share"></i></button>
+            
           </div>
             </div>
 
@@ -179,10 +161,10 @@
           </p>
 
           <div class="reaction">
-            <i class="fa fa-heart"> 120</i>
-            <i class="fa fa-comment"> 120</i>
-            <i class="fa fa-save"> 120</i>
-            <i class="fa fa-share"></i>
+            <button class = reaction button><i class="fa fa-heart"> </i></button>
+            <button class = reaction button><i class="fa fa-comment"> </i></button>
+            <button class = reaction button><i class="fa fa-save"></i></button>
+            <button class = reaction button><i class="fa fa-share"></i></button>
           </div>
             </div>
 
@@ -194,10 +176,11 @@
           </p>
 
           <div class="reaction">
-            <i class="fa fa-heart"> 120</i>
-            <i class="fa fa-comment"> 120</i>
-            <i class="fa fa-save"> 120</i>
-            <i class="fa fa-share"></i>
+            <button class = reaction button><i class="fa fa-heart"> </i></button>
+            <button class = reaction button><i class="fa fa-comment"> </i></button>
+            <button class = reaction button><i class="fa fa-save"></i></button>
+            <button class = reaction button><i class="fa fa-share"></i></button>
+            
           </div>
             </div>
             <div class="post-box">
@@ -208,10 +191,11 @@
           </p>
 
           <div class="reaction">
-            <i class="fa fa-heart"> 120</i>
-            <i class="fa fa-comment"> 120</i>
-            <i class="fa fa-save"> 120</i>
-            <i class="fa fa-share"></i>
+            <button class = reaction button><i class="fa fa-heart"> </i></button>
+            <button class = reaction button><i class="fa fa-comment"> </i></button>
+            <button class = reaction button><i class="fa fa-save"></i></button>
+            <button class = reaction button><i class="fa fa-share"></i></button>
+            
           </div>
             </div>
             <div class="post-box">
@@ -222,10 +206,11 @@
           </p>
 
           <div class="reaction">
-            <i class="fa fa-heart"> 120</i>
-            <i class="fa fa-comment"> 120</i>
-            <i class="fa fa-save"> 120</i>
-            <i class="fa fa-share"></i>
+            <button class = reaction button><i class="fa fa-heart"> </i></button>
+            <button class = reaction button><i class="fa fa-comment"> </i></button>
+            <button class = reaction button><i class="fa fa-save"></i></button>
+            <button class = reaction button><i class="fa fa-share"></i></button>
+            
           </div>
             </div>
 

@@ -9,6 +9,15 @@ const myMenu = document.getElementById('sub-menu');
 function display(){
     myMenu.classList.toggle("open-menu");
 }
+// like button customization
+let likeCount = 0;
+
+function like() {
+  likeCount++;
+  const likes = document.getElementById("likeCount");
+
+  likes.textContent = likeCount;
+}
 
 // Get user input values of the user from the input
  
